@@ -1,0 +1,16 @@
+# Project Statement: Command-Line Task Engine
+
+## Problem Statement
+Most modern project management software relies heavily on bulky graphical interfaces and constant web connectivity. For developers who spend their entire workday inside a terminal environment, bouncing back and forth between a web browser and a shell session creates a disjointed workflow. There is a practical need for a lightweight, terminal-native utility that handles task logging locally, operates instantly without loading overhead, and minimizes resource usage.
+
+## Scope of the Project
+This application delivers a functional, text-based workflow engine built purely in Python. The current build handles terminal command parsing, local data persistence via flat files, and structural input verification. To keep the project focused and lightweight, it deliberately leaves out external database setups, cloud sync features, user accounts, and visual user interfaces.
+
+## Target Users
+* Software developers and system admins who prefer keeping their hands on the home row instead of using a mouse.
+* Programming students looking for a simple, distraction-free tracker to log and verify daily project milestones directly from their dev environment.
+
+## High-Level Features
+* **Input Interpreter:** Processes raw strings typed into the terminal and maps them cleanly to project actions.
+* **Validation Subsystem:** Automatically screens dates, states, and string lengths to block invalid inputs before they write to disk.
+* **File Management System:** Handles reading from and updating local text-based files to make sure records stay intact across terminal restarts.
